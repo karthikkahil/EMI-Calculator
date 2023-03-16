@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Emi Calculatore</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="icon"
+      href="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="loader_sping"></div>
+
+      <div class="emi_calc">
+        <!-- reloadPage -->
+        <div class="reload" title="Reload page">&#8634;</div>
+        <!-- reloadPage -->
+        <!-- Header -->
+        <h1>Emi Calculator</h1>
+        <!-- Header -->
+
+        <!-- Sorting -->
+      </h2>
+        <!-- Sorting -->
+
+        <!-- Table calc -->
+        <div class="table_main">
+          <tr>
+            <td>
+              <table>
+                <tr>
+                  <td class="table--main_content">Enter loan amount:</td>
+                  <td colspan="2">
+                    <input type="number" required class="loanAmount--price" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table--main_content">Enter interest rate:</td>
+                  <td colspan="2">
+                    <input type="number" required class="loanAmount--interest" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table--main_content">Enter tenure period:</td>
+                  <td><input type="number" required class="loanAmount--tenure" /></td>
+                  <td>
+                    <select name="" id="selectOption">
+                      <option value="month">Month</option>
+                      <option value="year">Year</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </div>
+        <!-- Table calc -->
+        <!-- Btn -->
+        <button class="calculate--emi" title="Calculate EMI">
+          Calculate EMI 🙂
+        </button>
+
+        <button class="generate--emi" title="Generate EMI">
+          Generate EMI 📑
+        </button>
+        <!-- Btn -->
+        <!-- CalcEMI -->
+        <h4 class="calcEMI"></h4>
+        <!-- CalcEMI -->
+        <!-- After calc int -->
+        <div class="final_calc">
+          <p class="total--interest">
+            Total Interest Paid:&nbsp; <span id="total--interest"></span>
+          </p>
+          <p class="total--amount">
+            Total Amount Paid:&nbsp; <span id="total--amount"></span>
+          </p>
+          <p class="total--ratePA">
+            Effective Rate P.A:&nbsp; <span id="total--ratePA"></span>
+          </p>
+          <p class="total--ratePM">
+            Effective Rate P.M:&nbsp; <span id="total--ratePM"></span>
+          </p>
+        </div>
+        <!-- After calc int -->
+      </div>
+    </div>
+
+    <!-- Export PDF -->
+    <!-- <div class="btn--ExportPDF">
+      <button class="btnExport"  type="button" value="Export" >Export to PDF</button>
+    </div> -->
+
+      <!-- Export PDF -->
+
+    <div class="EMI_table">
+      <tr>
+        <td>
+          <table
+            class="border_table"
+            width="100%"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+          ></table>
+        </td>
+      </tr>
+    </div>
+
+    <div class="child--table"></div>
+    <!--  -->
+    <script src="app.js"></script>
+    <script src="test.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+  </body>
+</html>

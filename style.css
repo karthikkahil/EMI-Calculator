@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  margin-right: 10px;
+}
+
+.container {
+  background: rgb(246, 80, 160);
+  background: linear-gradient(
+    90deg,
+    rgba(246, 80, 160, 1) 0%,
+    rgba(238, 77, 95, 1) 100%
+  );
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container h1 {
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.emi_calc {
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.table--main_content {
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+/* Button */
+
+.calculate--emi,
+.generate--emi {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #850e35;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.generate--emi {
+  background-color: #1c6758;
+}
+
+.calculate--emi:active,
+.generate--emi:active {
+  transform: translateY(3px);
+}
+
+.final_calc {
+  margin-top: 20px;
+}
+
+.final_calc p {
+  line-height: 2rem;
+  font-size: 1rem;
+  text-align: left;
+  width: 100%;
+}
+
+.calcEMI {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.reload {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+
+/* Emi Table */
+
+.EMI_table {
+  background-color: #f9f9f9;
+  margin: 30px 30px 30px 30px;
+}
+
+.border_table td,
+.border_table th,
+.border_table table {
+  border: 1px solid white;
+  padding: 10px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.border_table tbody:nth-child(even) {
+  background-color: #eaf6f6;
+}
+
+.border_table thead {
+  background-color: #c3f8ff;
+}
+
+/* Loader-spin */
+
+#loadingSpin {
+  color: #000;
+}
+
+@media only screen and (max-width: 600px) {
+  .border_table {
+    font-size: 1rem;
+  }
+
+  .border_table td,
+  .border_table th,
+  .border_table table {
+    border: 0.5px solid white;
+    padding: 5px;
+
+    font-size: 0.8rem;
+    border-collapse: collapse;
+    text-align: center;
+  }
+}
+
+/* Export PDF */
+
+.btn--ExportPDF {
+  font-size: 2rem;
+  margin: 30px 30px 0px 30px;
+}
+
+.btnExport {
+  background-color: #0096ff;
+  border: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  outline: 0;
+}
+
+.btnExport:active {
+  transform: translateY(3px);
+}
